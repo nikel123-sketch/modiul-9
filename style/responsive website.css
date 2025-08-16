@@ -12,6 +12,8 @@
 .disply-flex{
     display: flex;
 }
+
+
 /* dark-o3 */
 .text-gray{
     color: #424242;
@@ -41,8 +43,10 @@
 }
 
 .navbar{
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 .navbar, .banner{
     max-width: 1440px;
@@ -60,7 +64,7 @@
     
 }
 .banner-title{
-   width: 862px;
+   width: 100%;
    
 }
 .btn{
@@ -81,10 +85,98 @@ img{
     
 }
 
+
+
+/* main */
+.main-container{
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px ;
+    margin-top: 70px;
+    width: 300px;
+    height: 400px;
+    
+}
+.main-title{
+    width: 420px;
+    height: 100;
+    /* border: 2px solid red; */
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    
+}
+.des{
+    width: 500px;
+    height: 70px;
+    /* border: 2px solid red; */
+    margin-top: 24px;
+}
+.des-container{
+    width: 450px;
+    height: 250px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+.main-btn{
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600px;
+    width: 170px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    padding:20px 25px ;
+    margin-top: 15px;
+}
+.features{
+    color: rgba(255, 144, 14, 1);
+    font-size: 45px;
+    font-weight: 500;
+
+}
+.quick{
+    color: #727272;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.of-our{
+    color: #131313;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive in header */
-@media screen and (max-width:576) {
-    .navbar, .nav-links{
-        flex-direction: column;
+@media screen and {
+    .navbar, .barnd{
+        flex-direction: column-reverse;
     }
     
 }
