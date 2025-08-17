@@ -161,6 +161,59 @@ img{
     font-weight: 500;
 }
 
+/* 3rd- section */
+.Features{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+.div-container{
+    width: 675px;
+    height: auto;
+    /* margin: 0 auto; */
+    /* background-color: rgb(241, 145, 19); */
+    margin-top: 20px;
+    padding: 20px;
+}
+/* .threeimg{
+    width: 600px;
+    height: 100px;
+} */
+.imgsection{
+     width: 675px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* some facts */
+
+.some-fact{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.img-icon{
+    width: 45px;
+    height: 45px;
+}
+
+.one-card{
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    padding: 50px;
+    
+}
+.some-card-section{
+    display: flex;
+    gap: 120px;
+}
+
+
+
 
 
 
@@ -174,9 +227,17 @@ img{
 
 
 /* responsive in header */
-@media screen and {
+@media screen and(max-width:500) {
     .navbar, .barnd{
         flex-direction: column-reverse;
     }
     
+}
+
+/* main */
+
+@media screen and (max-width:500) {
+    .main-container{
+        flex-direction:column;
+    }
 }
